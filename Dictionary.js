@@ -10,9 +10,9 @@ function dicEV()
                 if (arr_Eng[i] === newWord)
                     {
                         mean = arr_Vi[i];
-                        document.getElementById('result').innerText = 'Nghĩa của từ là: ' + mean;
                         break;
                     }
-                if (!mean) document.getElementById('result').innerText = "Không tìm thấy từ mới";
             }
+        if (!mean) document.getElementById('result').innerText = "Không tìm thấy từ mới";
+        else document.getElementById('result').innerText = 'Nghĩa của từ là: ' + mean;
     }
